@@ -1,7 +1,6 @@
 let form = document.getElementById('date');
 
-form.addEventListener("submit",function(event){
-    event.preventDefault();
+form.addEventListener("submit",function(){
     let day = document.getElementById('day').disabled;
     let month = document.getElementById('month');
     let year = document.getElementById('year').disabled;
