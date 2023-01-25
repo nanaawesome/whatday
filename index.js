@@ -3,7 +3,7 @@ let form = document.getElementById('date');
 form.addEventListener("submit",function(event){
     event.preventDefault();
     let day = document.getElementById('day').disabled;
-    let month = document.getElementById('month').disabled;
+    let month = document.getElementById('month');
     let year = document.getElementById('year').disabled;
 
     function dayofWeek(day,month,year){
