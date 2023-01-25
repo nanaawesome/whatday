@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What Day</title>
+</head>
+<body>
+    <h1>WHAT DAY IS/WAS IT?</h1>
+    <form id="date" action="">
+        <label for="day">Day:</label><br>
+        <input type="number" id="day" name="day"><br>
+        <label for="month">Month:</label><br>
+        <input type="number" id="month" name="month" min="1" max="12">
+        <label for="year">Year:</label><br>
+        <input type="number" id="year" name="year" >
+        <button onclick="dayofWeek()">Let's Find Out!</button>
+    </form>
+    <h1 id="result">It is my <span id="textofDay"></span>, funny quote here</h1>
+</body>
+<script type="text/javascript" src="index.js"></script>
+</html>
