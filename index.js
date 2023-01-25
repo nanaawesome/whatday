@@ -1,6 +1,6 @@
-let day = document.getElementById('day');
-let month = document.getElementById('month');
-let year = document.getElementById('year');
+let day = document.getElementById('day').value;
+let month = document.getElementById('month').value;
+let year = document.getElementById('year').value;
 
 function dayofWeek(day,month,year){
     k = year%100;
