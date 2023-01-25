@@ -2,9 +2,9 @@ let form = document.getElementById('date');
 
 form.addEventListener("submit",function(event){
     event.preventDefault();
-    let day = document.getElementById('day').value;
-    let month = document.getElementById('month').value;
-    let year = document.getElementById('year').value;
+    let day = document.getElementById('day').disabled;
+    let month = document.getElementById('month').disabled;
+    let year = document.getElementById('year').disabled;
 
     function dayofWeek(day,month,year){
         var k = year%100;
@@ -17,7 +17,7 @@ form.addEventListener("submit",function(event){
     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     
     var dayText=days[dayofWeek];
-    console.log(document.getElementById('day').disabled);
+    console.log(month);
     document.getElementById('textofDay').innerHTML=dayText;
 
 })
