@@ -1,9 +1,9 @@
 let form = document.getElementById('date');
 
 form.addEventListener("submit",function(){
-    let day = document.getElementById('day').disabled;
+    let day = document.getElementById('day').value;
     let month = document.getElementById('month').value;
-    let year = document.getElementById('year').disabled;
+    let year = document.getElementById('year').value;
 
     function dayofWeek(day,month,year){
         var k = year%100;
