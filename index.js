@@ -9,7 +9,8 @@ form.addEventListener("submit",function(event){
     function dayofWeek(day,month,year){
         var k = year%100;
         var j = Math.floor(year/100);
-        var h = Math.ceil((day + ((13*(month+1))/5)+k+(k/4)+(j/4)-(2*j))%7);
+        var x = day + ((13*(month+1))/5)+k+(k/4)+(j/4)-(2*j);
+        var h = Math.ceil(x%7);
         var d = ((h+5)%7)+1;
         return d;
     }
