@@ -1,6 +1,7 @@
 let form = document.getElementById('date');
 
-form.addEventListener("submit",function(){
+form.addEventListener("submit",function(event){
+    event.preventDefault();
     let day = document.getElementById('day').value;
     let month = document.getElementById('month').value;
     let year = document.getElementById('year').value;
