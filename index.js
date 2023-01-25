@@ -18,7 +18,7 @@ form.addEventListener("submit",function(event){
     let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
     
     var dayText=days[dayofWeek(day,month,year)];
-    console.log(dayofWeek(day,month,year));
+    console.log(typeof day);
     document.getElementById('textofDay').innerHTML=dayText;
 
 })
