@@ -12,4 +12,5 @@ function dayofWeek(day,month,year){
 let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 
 var dayText=days[dayofWeek];
+console.log(day);
 document.getElementById('textofDay').innerHTML=dayText;
