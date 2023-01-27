@@ -7,6 +7,10 @@ body{
     display: flex;
 }
 
+div{
+    display: flex;
+}
+
 #form{
     align-items: center;
     justify-content: center;
