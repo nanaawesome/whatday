@@ -3,11 +3,11 @@ body{
 }
 
 
-.container{
+#container{
     display: flex;
 }
 
-.form{
+#form{
     align-items: center;
     justify-content: center;
 }
