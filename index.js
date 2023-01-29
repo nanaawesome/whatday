@@ -28,8 +28,7 @@ form.addEventListener("submit",function(event){
     
     var dayText=days[dayofWeek(day,month,year)];
     console.log(dayText);
-    document.getElementById('textofDay').innerHTML=dayText;
-
+    document.getElementById('textofDay').innerHTML=`It is a ${dayText}`;
 })
 
 
