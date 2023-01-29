@@ -5,16 +5,26 @@ form.addEventListener("submit",function(event){
     let day = parseInt(document.getElementById("day").value);
     let month = parseInt(document.getElementById("month").value);
     let year = parseInt(document.getElementById("year").value);
+    
+    if (month == 1)
+    {
+        month = 13;
+        year--;
+    }
+    if (month == 2)
+    {
+        month = 14;
+        year--;
+    }
     function dayofWeek(day,month,year){
         var k = year%100;
         var j = Math.floor(year/100);
         var x = day+((13*(month+1))/5)+k+(k/4)+(j/4)+(5*j);
         var h = Math.ceil(x%7);
-        var d = ((h+5)%7)+1;
-        return d;
+        return h;
     }
     
-    let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    let days = ["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday","Friday"];
     
     var dayText=days[dayofWeek(day,month,year)];
     console.log(dayText);
